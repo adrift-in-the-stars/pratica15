@@ -9,3 +9,8 @@ test-job2:
     stage: test
     script:
         - echo "This job tests something else"
+
+build-job:
+    stage: build
+    script:
+        echo "Olá, $GITLAB_USER_LOGIN!"
